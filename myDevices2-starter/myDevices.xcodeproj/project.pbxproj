@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40499EC51CD4C26D0094FE45 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40499EC11CD4C26D0094FE45 /* Device+CoreDataProperties.swift */; };
+		40499EC61CD4C26D0094FE45 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40499EC21CD4C26D0094FE45 /* Device.swift */; };
+		40499EC71CD4C26D0094FE45 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40499EC31CD4C26D0094FE45 /* Person+CoreDataProperties.swift */; };
+		40499EC81CD4C26D0094FE45 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40499EC41CD4C26D0094FE45 /* Person.swift */; };
 		78BB8AC61B7D6C54007F73C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB8AC51B7D6C54007F73C3 /* AppDelegate.swift */; };
 		78BB8AC81B7D6C54007F73C3 /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB8AC71B7D6C54007F73C3 /* DevicesTableViewController.swift */; };
 		78BB8ACB1B7D6C54007F73C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BB8AC91B7D6C54007F73C3 /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40499EC11CD4C26D0094FE45 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40499EC21CD4C26D0094FE45 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		40499EC31CD4C26D0094FE45 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40499EC41CD4C26D0094FE45 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		78BB8AC21B7D6C54007F73C3 /* myDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BB8AC51B7D6C54007F73C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78BB8AC71B7D6C54007F73C3 /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		78BB8AC41B7D6C54007F73C3 /* myDevices */ = {
 			isa = PBXGroup;
 			children = (
+				40499EC11CD4C26D0094FE45 /* Device+CoreDataProperties.swift */,
+				40499EC21CD4C26D0094FE45 /* Device.swift */,
+				40499EC31CD4C26D0094FE45 /* Person+CoreDataProperties.swift */,
+				40499EC41CD4C26D0094FE45 /* Person.swift */,
 				78BB8AC51B7D6C54007F73C3 /* AppDelegate.swift */,
 				78BB8AC71B7D6C54007F73C3 /* DevicesTableViewController.swift */,
 				78BB8ADC1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift */,
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BB8ADD1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift in Sources */,
+				40499EC51CD4C26D0094FE45 /* Device+CoreDataProperties.swift in Sources */,
 				78BB8AC81B7D6C54007F73C3 /* DevicesTableViewController.swift in Sources */,
 				78BB8ACE1B7D6C54007F73C3 /* myDevices.xcdatamodeld in Sources */,
+				40499EC71CD4C26D0094FE45 /* Person+CoreDataProperties.swift in Sources */,
 				78BB8ADB1B7E4A2F007F73C3 /* PeopleTableViewController.swift in Sources */,
+				40499EC81CD4C26D0094FE45 /* Person.swift in Sources */,
+				40499EC61CD4C26D0094FE45 /* Device.swift in Sources */,
 				78BB8AC61B7D6C54007F73C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
