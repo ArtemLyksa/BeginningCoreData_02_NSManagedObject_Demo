@@ -25,13 +25,13 @@ import CoreData
 
 class DevicesTableViewController: UITableViewController {
   var managedObjectContext: NSManagedObjectContext!
-  var devices = [NSManagedObject]()
+  var devices = [Device]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     title = "Devices"
-    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addDevice:")
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(DevicesTableViewController.addDevice(_:)))
   }
 
   override func viewWillAppear(animated: Bool) {
@@ -45,7 +45,7 @@ class DevicesTableViewController: UITableViewController {
     let fetchRequest = NSFetchRequest(entityName: "Device")
 
     do {
-      if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as? [NSManagedObject] {
+      if let results = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Device] {
         devices = results
       }
     } catch {
@@ -67,10 +67,8 @@ class DevicesTableViewController: UITableViewController {
     let cell = tableView.dequeueReusableCellWithIdentifier("DeviceCell", forIndexPath: indexPath)
 
     let device = devices[indexPath.row]
-    if let deviceName = device.valueForKey("name") as? String, deviceType = device.valueForKey("deviceType") as? String {
-      cell.textLabel?.text = deviceName
-      cell.detailTextLabel?.text = deviceType
-    }
+      cell.textLabel?.text = device.name
+      cell.detailTextLabel?.text = device.deviceType
     
     return cell
   }

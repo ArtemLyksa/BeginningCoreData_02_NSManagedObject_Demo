@@ -43,8 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     if let tab = window?.rootViewController as? UITabBarController {
       for child in tab.viewControllers ?? [] {
         if let child = child as? UINavigationController, top = child.topViewController {
-          if top.respondsToSelector("setManagedObjectContext:") {
-            top.performSelector("setManagedObjectContext:", withObject: managedObjectContext)
+          if top.respondsToSelector(Selector("setManagedObjectContext:")) {
+            top.performSelector(Selector("setManagedObjectContext:"), withObject: managedObjectContext)
           }
         }
       }
@@ -59,16 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     for i in 1...10 {
-      let device = NSManagedObject(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
+      let device = Device(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
 
-      device.setValue("Some Device #\(i)", forKey: "name")
-      device.setValue(i % 3 == 0 ? "Watch" : "iPhone", forKey: "deviceType")
+      device.name = ("Some Device #\(i)")
+      device.deviceType = i % 3 == 0 ? "Watch" : "iPhone"
     }
 
-    let bob = NSManagedObject(entity: personEntity, insertIntoManagedObjectContext: managedObjectContext)
-    bob.setValue("Bob", forKey: "name")
-    let jane = NSManagedObject(entity: personEntity, insertIntoManagedObjectContext: managedObjectContext)
-    jane.setValue("Jane", forKey: "name")
+    let bob = Person(entity: personEntity, insertIntoManagedObjectContext: managedObjectContext)
+    bob.name = "Bob"
+    let jane = Person(entity: personEntity, insertIntoManagedObjectContext: managedObjectContext)
+    jane.name = "Jane"
 
     saveContext()
   }
