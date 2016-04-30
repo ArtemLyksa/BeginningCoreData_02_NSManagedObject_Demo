@@ -15,6 +15,10 @@
 		78BB8AD31B7D6C54007F73C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BB8AD11B7D6C54007F73C3 /* LaunchScreen.storyboard */; };
 		78BB8ADB1B7E4A2F007F73C3 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB8ADA1B7E4A2F007F73C3 /* PeopleTableViewController.swift */; };
 		78BB8ADD1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB8ADC1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift */; };
+		A24B41291CD4C21200E88534 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B41251CD4C21200E88534 /* Device+CoreDataProperties.swift */; };
+		A24B412A1CD4C21200E88534 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B41261CD4C21200E88534 /* Device.swift */; };
+		A24B412B1CD4C21200E88534 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B41271CD4C21200E88534 /* Person+CoreDataProperties.swift */; };
+		A24B412C1CD4C21200E88534 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B41281CD4C21200E88534 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		78BB8AD41B7D6C54007F73C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78BB8ADA1B7E4A2F007F73C3 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		78BB8ADC1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailTableViewController.swift; sourceTree = "<group>"; };
+		A24B41251CD4C21200E88534 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A24B41261CD4C21200E88534 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A24B41271CD4C21200E88534 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A24B41281CD4C21200E88534 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 		78BB8AC41B7D6C54007F73C3 /* myDevices */ = {
 			isa = PBXGroup;
 			children = (
+				A24B41251CD4C21200E88534 /* Device+CoreDataProperties.swift */,
+				A24B41261CD4C21200E88534 /* Device.swift */,
+				A24B41271CD4C21200E88534 /* Person+CoreDataProperties.swift */,
+				A24B41281CD4C21200E88534 /* Person.swift */,
 				78BB8AC51B7D6C54007F73C3 /* AppDelegate.swift */,
 				78BB8AC71B7D6C54007F73C3 /* DevicesTableViewController.swift */,
 				78BB8ADC1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift */,
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BB8ADD1B7E4D5D007F73C3 /* DeviceDetailTableViewController.swift in Sources */,
+				A24B41291CD4C21200E88534 /* Device+CoreDataProperties.swift in Sources */,
 				78BB8AC81B7D6C54007F73C3 /* DevicesTableViewController.swift in Sources */,
 				78BB8ACE1B7D6C54007F73C3 /* myDevices.xcdatamodeld in Sources */,
+				A24B412B1CD4C21200E88534 /* Person+CoreDataProperties.swift in Sources */,
 				78BB8ADB1B7E4A2F007F73C3 /* PeopleTableViewController.swift in Sources */,
+				A24B412C1CD4C21200E88534 /* Person.swift in Sources */,
+				A24B412A1CD4C21200E88534 /* Device.swift in Sources */,
 				78BB8AC61B7D6C54007F73C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
